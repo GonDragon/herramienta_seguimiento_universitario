@@ -119,11 +119,16 @@ img.logo {
  max-height: 4rem;
 }
 
-/*Cartas */
 .herramientas .herramienta {
-  max-width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
+.herramientas .herramienta:first-child {
+  margin-top: 0;
+}
+.herramientas .herramienta:last-child {
+  margin-bottom: 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -226,7 +231,10 @@ img.logo {
 
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) {
-   /* ... */
+   .herramientas .herramienta {
+     max-width: 25%;
+     margin: 0;
+   }
  }
 
  /* Extra large devices (large desktops, 1200px and up) */
