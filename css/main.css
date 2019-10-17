@@ -119,6 +119,11 @@ img.logo {
  max-height: 4rem;
 }
 
+/*Cartas */
+.herramientas .herramienta {
+  max-width: 25%;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -209,16 +214,25 @@ img.logo {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+   /* ... */
+ }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+   /* ... */
+ }
+
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+   /* ... */
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+   /* ... */
+ }
 
 /* ==========================================================================
    Print styles.
