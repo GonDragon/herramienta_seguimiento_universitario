@@ -11,6 +11,23 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/* Paleta de Colores */
+.primaria {
+  background-color: #eee;
+  color: #222;
+}
+
+.secundaria {
+  background-color: #222;
+  color: #eee;
+}
+
+.cabecera {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Principal */
 html {
   color: #222;
   font-size: 1em;
