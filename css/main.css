@@ -11,31 +11,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/* Paleta de Colores */
-.primaria {
-  background-color: #eee;
-  color: #222;
-}
-
-.secundaria {
-  background-color: #222;
-  color: #eee;
-}
-
-.cabecera {
-  background-color: #222;
-  color: #eee;
-}
-
-/* Principal */
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-}
-
-img.logo {
-  max-height: 4rem;
 }
 
 /*
@@ -119,12 +98,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header,
-footer {
-  min-height: 3rem;
-  padding: 1rem;
-  background-color: #222;
-  color: #eee;
+/* Paleta de Colores */
+.primaria {
+ background-color: #eee;
+ color: #222;
+}
+
+.secundaria {
+ background-color: #222;
+ color: #eee;
+}
+
+.resaltado {
+ background-color: #222;
+ color: #eee;
+}
+
+/* Principal */
+img.logo {
+ max-height: 4rem;
 }
 
 
