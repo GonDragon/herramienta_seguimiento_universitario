@@ -103,6 +103,7 @@ textarea {
  /* Menus */
  .menu-transparente{
    background-color: #fff;
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
    opacity: 0.95;
    padding: 0 0.5rem;
  }
@@ -150,9 +151,18 @@ textarea {
 }
 
 /* Barra navegacion */
+#barra-principal .nav-item>a{
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
 #barra-principal .dropdown-divider {
   width: 75%;
   margin: auto;
+}
+
+#barra-principal .nav-item {
+  border-bottom: 2px solid #fff;
 }
 
 /* Principal */
