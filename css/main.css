@@ -96,11 +96,30 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- /* Generales */
+ /* Menus */
  .menu-transparente{
    background-color: #fff;
    opacity: 0.95;
+   padding: 0 0.5rem;
  }
+
+ .menu-transparente a{
+   border-radius: 4px;
+   margin: 0.5rem 0;
+ }
+ .menu-transparente a:hover {
+   background-color: #224;
+   color: #eee;
+ }
+
+.dropdown-toggle-custom::after {
+  display: inline-block;
+  content: "⏷";
+  transition: transform linear 70ms;
+}
+.show .dropdown-toggle-custom::after{
+  transform: rotate(90deg) !important;
+}
 
 /* Paleta de Colores */
 .primaria,body {
