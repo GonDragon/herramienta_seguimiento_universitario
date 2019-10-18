@@ -16,7 +16,6 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,9 +96,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ /* Generales */
+ .menu-transparente{
+   background-color: #eee;
+   opacity: 0.8;
+ }
 
 /* Paleta de Colores */
-.primaria {
+.primaria,body {
  background-color: #eee;
  color: #222;
 }
@@ -114,11 +118,36 @@ textarea {
  color: #eee;
 }
 
-/* Principal */
+/* Cabecera */
 img.logo {
  max-height: 4rem;
 }
 
+/* Barra navegacion */
+.barra-navegacion{
+
+}
+.barra-navegacion>ul {
+  display: flex;
+}
+.barra-navegacion>ul>li {
+  box-sizing: border-box;
+  margin: 0 0.5rem;
+  position: relative;
+}
+.sub-menu-barra{
+  border: 1px solid grey;
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+/* Principal */
 .herramientas .herramienta {
   margin-top: 1rem;
   margin-bottom: 1rem;
