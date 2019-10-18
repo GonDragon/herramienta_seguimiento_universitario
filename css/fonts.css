@@ -2,31 +2,40 @@
 @font-face {
   font-family: 'Open Sans', sans-serif;
   src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Roboto Condensed */
 @font-face {
   font-family: 'Roboto Condensed', sans-serif;
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
-}
+  font-weight: bold;
+  font-style: normal;
+} */
 
 /* Montserrat */
 @font-face {
   font-family: 'Montserrat', sans-serif;
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
