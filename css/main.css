@@ -98,8 +98,8 @@ textarea {
    ========================================================================== */
  /* Generales */
  .menu-transparente{
-   background-color: #eee;
-   opacity: 0.8;
+   background-color: #fff;
+   opacity: 0.95;
  }
 
 /* Paleta de Colores */
@@ -127,27 +127,9 @@ textarea {
 }
 
 /* Barra navegacion */
-.barra-navegacion{
-
-}
-.barra-navegacion>ul {
-  display: flex;
-}
-.barra-navegacion>ul>li {
-  box-sizing: border-box;
-  margin: 0 0.5rem;
-  position: relative;
-}
-.sub-menu-barra{
-  border: 1px solid grey;
-  border-radius: 0 0 6px 6px;
-  border-top: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 0.3rem;
-  position: absolute;
-  white-space: nowrap;
-  z-index: 1000;
+#barra-principal .dropdown-divider {
+  width: 75%;
+  margin: auto;
 }
 
 /* Principal */
