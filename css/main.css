@@ -119,8 +119,11 @@ textarea {
 }
 
 /* Cabecera */
-img.logo {
- max-height: 4rem;
+.navbar-brand .logo {
+ max-height: 2rem;
+}
+.navbar-brand h1 {
+  font-size: 2rem;
 }
 
 /* Barra navegacion */
