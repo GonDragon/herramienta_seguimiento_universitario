@@ -119,11 +119,11 @@ textarea {
 
 .dropdown-toggle-custom::after {
   display: inline-block;
-  content: "⏷";
+  content: "\203A";
   transition: transform linear 70ms;
 }
 .show .dropdown-toggle-custom::after{
-  transform: rotate(90deg) !important;
+  transform: rotate(90deg) translate(2px,-2px);
 }
 
 /* Paleta de Colores */
@@ -162,7 +162,15 @@ textarea {
 }
 
 #barra-principal .nav-item {
-  border-bottom: 2px solid #fff;
+  transition: box-shadow linear 0.2s;
+}
+
+/* #barra-principal .nav-item.active {
+  box-shadow: inset 0 -3px 0 #668;
+} */
+
+#barra-principal .nav-item:hover {
+  box-shadow: inset 0 -3px 0 #668;
 }
 
 /* Principal */
