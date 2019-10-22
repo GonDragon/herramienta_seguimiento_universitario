@@ -171,14 +171,13 @@ textarea {
 }
 
 /* Principal */
-.herramientas .herramienta {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+#herramientas .herramienta {
+  margin: 0 1rem;
 }
-.herramientas .herramienta:first-child {
+#herramientas .herramienta:first-child {
   margin-top: 0;
 }
-.herramientas .herramienta:last-child {
+#herramientas .herramienta:last-child {
   margin-bottom: 0;
 }
 
@@ -200,7 +199,7 @@ textarea {
 
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) {
-   .herramientas .herramienta {
+   #herramientas .herramienta {
      max-width: 25%;
      margin: 0;
    }
