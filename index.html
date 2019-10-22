@@ -70,13 +70,19 @@
   </header>
   <main class="container primaria p-3">
     <section class="py-2">
-      <div id="carouselInfo" class="carousel slide carousel-fade" data-ride="carousel">
+      <div id="carouselInfo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <article class="carousel-item active">
             <p>Foo Bar</p>
           </article>
           <article class="carousel-item">
             <p>Bar</p>
+          </article>
+          <article class="carousel-item">
+            <p>Foo Bar Foo Foo</p>
+          </article>
+          <article class="carousel-item">
+            <p>Foo Bar Foo Foo</p>
           </article>
           <article class="carousel-item">
             <p>Foo Bar Foo Foo</p>
@@ -90,6 +96,14 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+
+        <ol class="">
+          <li data-target="#carouselInfo" data-slide-to="0" class="active">HSU</li>
+          <li data-target="#carouselInfo" data-slide-to="1">Tablas de Datos</li>
+          <li data-target="#carouselInfo" data-slide-to="2">Perfiles</li>
+          <li data-target="#carouselInfo" data-slide-to="3">Etc 1</li>
+          <li data-target="#carouselInfo" data-slide-to="4">Etc 2</li>
+        </ol>
       </div>
     </section>
     <section id="herramientas" class="d-flex justify-content-around flex-column flex-lg-row py-2">
