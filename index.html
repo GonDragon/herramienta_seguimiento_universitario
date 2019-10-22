@@ -69,8 +69,30 @@
     </nav>
   </header>
   <main class="container primaria p-3">
-    <section id="herramientas" class="d-flex d-flex justify-content-around flex-column flex-lg-row">
-
+    <section class="py-2">
+      <div id="carouselInfo" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <article class="carousel-item active">
+            <p>Foo Bar</p>
+          </article>
+          <article class="carousel-item">
+            <p>Bar</p>
+          </article>
+          <article class="carousel-item">
+            <p>Foo Bar Foo Foo</p>
+          </article>
+        </div>
+        <a class="carousel-control-prev" href="#carouselInfo" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselInfo" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section id="herramientas" class="d-flex justify-content-around flex-column flex-lg-row py-2">
       <div class="herramienta card">
         <img src="tile.png" class="card-img-top" alt="herramienta">
         <div class="card-body">
