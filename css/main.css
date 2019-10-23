@@ -132,14 +132,12 @@ textarea {
  color: #222;
 }
 
-.secundaria {
- background-color: #668;
- color: #eee;
-}
-
 .resaltado {
  background-color: #224;
  color: #eee;
+}
+.resaltado-borde {
+  border-color: #224;
 }
 
 /* Cabecera */
@@ -237,6 +235,16 @@ textarea {
   background-image: url("../img/articles/background4.png");
 }
 
+/* Perfiles de Usuario */
+.profilepic-wrapper > *{
+  margin-top: 0.3rem;
+}
+
+.materias li{
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -269,6 +277,19 @@ textarea {
    #carouselInfo .carousel-control-prev,
    #carouselInfo .carousel-control-next{
      display: none;
+   }
+
+   /* Perfiles de Usuario */
+   .profilepic-wrapper{
+     padding: 0 2rem;
+   }
+   .info-basica {
+     display: block;
+     min-width: 70%;
+     align-self: center;
+   }
+   .info-basica li {
+     border: none;
    }
  }
 
