@@ -186,11 +186,6 @@ textarea {
   background-color: #fff;
   overflow: hidden;
 }
-#carouselInfo article {
-  background-color: #888;
-  height: 45vh;
-  padding: 2rem;
-}
 #carouselInfo nav{
   display: none;
 }
@@ -207,8 +202,39 @@ textarea {
   background-color: #224;
 }
 
-#carouselInfo article .carousel-caption{
-  background-color: rgba(0, 0, 0, 0.5);
+/* Articulos Carrusel */
+#carouselInfo article {
+  background-color: #888;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 35vh;
+  padding: 2rem 0;
+}
+#carouselInfo article .article-content{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#carouselInfo article:nth-child(1) {
+  background-image: url("../img/articles/background5.jpg");
+}
+#carouselInfo article:nth-child(2) {
+  background-image: url("../img/articles/background2.jpg");
+}
+#carouselInfo article:nth-child(3) {
+  background-image: url("../img/articles/background3.png");
+}
+#carouselInfo article:nth-child(4) {
+  background-image: url("../img/articles/background1.jpg");
+}
+#carouselInfo article:nth-child(5) {
+  background-image: url("../img/articles/background4.png");
 }
 
 /* ==========================================================================
