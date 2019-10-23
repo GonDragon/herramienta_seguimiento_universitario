@@ -182,6 +182,9 @@ textarea {
 }
 
 /* Carrusel Principal */
+#carouselInfo {
+  background-color: #fff;
+}
 #carouselInfo article {
   background-color: #888;
   height: 45vh;
