@@ -70,22 +70,47 @@
   </header>
   <main class="container primaria p-3">
     <section class="py-2">
-      <div id="carouselInfo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+      <div id="carouselInfo" class="carousel slide carousel-fade rounded" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <article class="carousel-item active">
-            <p>Foo Bar</p>
+            <div class="carousel-caption">
+              <h2>Herramienta Seguimiento Universitario</h2>
+              <div class="cuerpo">
+                <p>La <strong>Herramienta de Seguimiento Universitario&trade;</strong> es un desarrollo hecho a medida que utiliza tecnologías web para facilitar a docentes y tutores el seguimiento del progreso y la actividad de sus estudiantes.</p>
+              </div>
+            </div>
           </article>
           <article class="carousel-item">
-            <p>Bar</p>
+            <div class="carousel-caption">
+              <h2>Tablas de Datos</h2>
+              <div class="cuerpo">
+                <p>Desde el menu superior puede accederse a diversas tablas de datos, que pueden ordenarse de diversos modos y en las cuales pueden añadirse anotaciones.</p>
+              </div>
+            </div>
           </article>
           <article class="carousel-item">
-            <p>Foo Bar Foo Foo</p>
+            <div class="carousel-caption">
+              <h2>Perfiles</h2>
+              <div class="cuerpo">
+                <p>Los perfiles individuales de cada estudiante, materia, carrera o tutor permiten enlazar de forma rápida y dinámica todos los datos relacionados, y a su vez permite la creacion de anotaciones.</p>
+              </div>
+            </div>
           </article>
           <article class="carousel-item">
-            <p>Foo Bar Foo Foo</p>
+            <div class="carousel-caption">
+              <h2>Etc 1</h2>
+              <div class="cuerpo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna quam, faucibus maximus felis eu, aliquet suscipit turpis. Sed a finibus mi. Proin rutrum consectetur consectetur. Nam posuere dolor tincidunt, luctus ipsum id, lobortis elit. Sed nec suscipit tellus, sit amet sollicitudin neque.</p>
+              </div>
+            </div>
           </article>
           <article class="carousel-item">
-            <p>Foo Bar Foo Foo</p>
+            <div class="carousel-caption">
+              <h2>Etc 2</h2>
+              <div class="cuerpo">
+                <p>Aliquam ac quam viverra, vehicula massa eu, commodo leo. Proin in scelerisque mi, quis pulvinar metus. Cras lacinia dignissim nunc, in viverra lorem consectetur nec. Maecenas efficitur eros et velit vehicula, rutrum vehicula diam volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat lobortis nisi sed aliquam.</p>
+              </div>
+            </div>
           </article>
 
           <a class="carousel-control-prev" href="#carouselInfo" role="button" data-slide="prev">
@@ -98,23 +123,13 @@
           </a>
         </div>
 
-        <ol class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link active"  data-target="#carouselInfo" data-slide-to="0" href="#">HSU</a>
-          </li>
-          <li class="nav-item">
-            <a data-target="#carouselInfo" data-slide-to="1" class="nav-link" href="#">Tablas de Datos</a>
-          </li>
-          <li class="nav-item">
-            <a data-target="#carouselInfo" data-slide-to="2" class="nav-link" href="#">Perfiles</a>
-          </li>
-          <li class="nav-item">
-            <a data-target="#carouselInfo" data-slide-to="3" class="nav-link" href="#">Etc 1</a>
-          </a>
-          <li class="nav-item">
-            <a data-target="#carouselInfo" data-slide-to="4" class="nav-link" href="#">Etc 2</a>
-          </li>
-        </ol>
+        <nav class="nav nav-pills nav-justified">
+          <a data-target="#carouselInfo" data-slide-to="0" class="nav-item nav-link active"  href="#">HSU</a>
+          <a data-target="#carouselInfo" data-slide-to="1" class="nav-item nav-link" href="#">Tablas de Datos</a>
+          <a data-target="#carouselInfo" data-slide-to="2" class="nav-item nav-link" href="#">Perfiles</a>
+          <a data-target="#carouselInfo" data-slide-to="3" class="nav-item nav-link" href="#">Etc 1</a>
+          <a data-target="#carouselInfo" data-slide-to="4" class="nav-item nav-link" href="#">Etc 2</a>
+        </nav>
       </div>
     </section>
     <section id="herramientas" class="d-flex justify-content-around flex-column flex-lg-row py-2">
