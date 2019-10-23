@@ -237,7 +237,12 @@ textarea {
 
 /* Perfiles de Usuario */
 .profilepic-wrapper > *{
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.profilepic-wrapper a:hover {
+  background-color: orange;
+  color: #eee;
 }
 
 .materias li{
