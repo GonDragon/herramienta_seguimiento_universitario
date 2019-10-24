@@ -238,6 +238,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-width: 100%;
 }
 
 #carouselInfo article:nth-child(1) {
