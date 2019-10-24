@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HSU</title>
+  <meta name="description" content="A site about things">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico" sizes="16x16 24x24 36x36 48x48">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <header class="resaltado container-fluid d-flex">
+    <nav id="barra-principal" class="navbar navbar-expand-lg navbar-dark py-0">
+      <div class="navbar-brand d-flex align-items-center p-0">
+        <img class="logo" src="tile-wide.png" alt="logo">
+        <h1 class="m-0">HSU</h1>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavToggler">
+        <ul class="navbar-nav px-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-custom" href="#" id="tablasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tablas
+            </a>
+            <div class="menu-transparente dropdown-menu" aria-labelledby="tablasDropdown">
+              <a class="dropdown-item" href="./tabla-general.html">General</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./tabla-materia.html">Por materia</a>
+              <a class="dropdown-item" href="./tabla-carrera.html">Por carrera</a>
+              <a class="dropdown-item" href="./tabla-tutor.html">Por tutor</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-custom" href="#" id="perfilesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Perfiles
+            </a>
+            <div class="menu-transparente dropdown-menu" aria-labelledby="perfilesDropdown">
+              <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
+              <a class="dropdown-item" href="./tutores.html">Tutores</a>
+              <a class="dropdown-item" href="./materias.html">Materias</a>
+              <a class="dropdown-item" href="./carreras.html">Carreras</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container primaria p-3">
+    <h2>Perfil Usuario</h2>
+    <article class="card text-center resaltado-borde">
+      <header class="card-header rounded-0 resaltado">
+        <h3>Cosme Fulanito</h3>
+      </header>
+      <div class="d-lg-flex">
+        <div class="profilepic-wrapper w-50 my-3 mx-auto d-flex flex-column">
+          <img src="./img/user.png" class="img-fluid rounded-circle" alt="foro de usuario">
+          <a href="#" class="resaltado text-decoration-none rounded-pill">Link Perfil Campus</a>
+          <span>Ultima Conexión Registrada - <time>25/05/1810</time> </span>
+        </div>
+
+        <ul class="info-basica list-group list-group-flush text-left">
+          <li class="list-group-item"><h3>Email</h3> cosmefulanito@noreply.com</li>
+          <li class="list-group-item"><h3>DNI</h3> 42.000.000</li>
+          <li class="list-group-item"><h3>Carreras</h3> Tecnicatura en análisis de mostachos</li>
+        </ul>
+      </div>
+      <div class="materias list-group-item border-right-0 border-left-0 text-left"><h3>Materias</h3>
+        <ul class="list-unstyled d-lg-flex justify-content-around">
+          <li class="resaltado rounded"><span>Peinado de Mostachos</span></li>
+          <li class="resaltado rounded"><span>Afeitado riesgoso IV</span></li>
+          <li class="resaltado rounded"><span>Seguridad e Higiene</span></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h3>Anotaciones</h3>
+        <div class="primaria rounded p-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam at malesuada suscipit. Nam porta turpis placerat arcu sagittis, et cursus elit faucibus. Cras faucibus elit id neque tincidunt pharetra. Sed congue, diam at vulputate ultrices, lorem libero accumsan eros, sed placerat ligula diam nec lectus. Ut quis libero urna. Praesent vitae iaculis diam, vitae scelerisque lectus. Nullam porttitor lorem vitae justo fringilla tristique. Aenean eu massa mauris</p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+  <footer class="resaltado container-fluid text-center">
+      <span>Copyright © <date>2019</date> All rights reserved.</span>
+  </footer>
+
+  <!-- End of site things -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>

@@ -16,7 +16,10 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.4;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,37 +100,155 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ /* Menus */
+ .menu-transparente{
+   background-color: #fff;
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+   opacity: 0.95;
+   padding: 0 0.5rem;
+ }
 
-/* Paleta de Colores */
-.primaria {
- background-color: #eee;
- color: #222;
+ .menu-transparente a{
+   border-radius: 4px;
+   margin: 0.5rem 0;
+ }
+ .menu-transparente a:hover {
+   background-color: #224;
+   color: #eee;
+ }
+
+.dropdown-toggle-custom::after {
+  display: inline-block;
+  content: "\203A";
+  transition: transform linear 70ms;
+}
+.show .dropdown-toggle-custom::after{
+  transform: rotate(90deg) translate(2px,-2px);
 }
 
-.secundaria {
- background-color: #222;
- color: #eee;
+/* Paleta de Colores */
+.primaria,body {
+ background-color: #eee;
+ color: #222;
 }
 
 .resaltado {
  background-color: #224;
  color: #eee;
 }
+.resaltado-borde {
+  border-color: #224;
+}
+
+/* Cabecera */
+.navbar-brand .logo {
+ max-height: 2rem;
+}
+.navbar-brand h1 {
+  font-size: 2rem;
+}
+
+/* Barra navegacion */
+#barra-principal .nav-item>a{
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+#barra-principal .dropdown-divider {
+  width: 75%;
+  margin: auto;
+}
+
+#barra-principal .nav-item {
+  transition: box-shadow linear 0.2s;
+  padding: 0.5rem 0;
+}
+
+#barra-principal .nav-item:hover {
+  box-shadow: inset 0 -3px 0 orange;
+}
 
 /* Principal */
-img.logo {
- max-height: 4rem;
+#herramientas .herramienta {
+  margin: 0 1rem;
 }
-
-.herramientas .herramienta {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.herramientas .herramienta:first-child {
+#herramientas .herramienta:first-child {
   margin-top: 0;
 }
-.herramientas .herramienta:last-child {
+#herramientas .herramienta:last-child {
   margin-bottom: 0;
+}
+
+/* Carrusel Principal */
+#carouselInfo {
+  background-color: #fff;
+  overflow: hidden;
+}
+#carouselInfo nav{
+  display: none;
+}
+#carouselInfo nav a{
+  color: #224;
+  margin: 0.5rem;
+}
+#carouselInfo nav a:hover{
+  color: #fff;
+  background-color: orange;
+}
+#carouselInfo nav a.active{
+  color: #fff;
+  background-color: #224;
+}
+
+/* Articulos Carrusel */
+#carouselInfo article {
+  background-color: #888;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 40vh;
+  min-height: 13rem;
+  padding: 2rem 0;
+}
+#carouselInfo article .article-content{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#carouselInfo article:nth-child(1) {
+  background-image: url("../img/articles/background5.jpg");
+}
+#carouselInfo article:nth-child(2) {
+  background-image: url("../img/articles/background2.jpg");
+}
+#carouselInfo article:nth-child(3) {
+  background-image: url("../img/articles/background3.png");
+}
+#carouselInfo article:nth-child(4) {
+  background-image: url("../img/articles/background1.jpg");
+}
+#carouselInfo article:nth-child(5) {
+  background-image: url("../img/articles/background4.png");
+}
+
+/* Perfiles de Usuario */
+.profilepic-wrapper > *{
+  margin-top: 0.5rem;
+}
+
+.profilepic-wrapper a:hover {
+  background-color: orange;
+  color: #eee;
+}
+
+.materias li{
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
 }
 
 /* ==========================================================================
@@ -138,19 +259,43 @@ img.logo {
 
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) {
-   /* ... */
+
  }
 
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) {
-   /* ... */
+   #carouselInfo nav{
+     display: block;
+   }
  }
 
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) {
-   .herramientas .herramienta {
+   #herramientas .herramienta {
      max-width: 25%;
      margin: 0;
+   }
+
+   #carouselInfo nav{
+     display: flex;
+   }
+
+   #carouselInfo .carousel-control-prev,
+   #carouselInfo .carousel-control-next{
+     display: none;
+   }
+
+   /* Perfiles de Usuario */
+   .profilepic-wrapper{
+     padding: 0 2rem;
+   }
+   .info-basica {
+     display: block;
+     min-width: 70%;
+     align-self: center;
+   }
+   .info-basica li {
+     border: none;
    }
  }
 
