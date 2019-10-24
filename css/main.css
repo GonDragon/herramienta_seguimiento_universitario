@@ -206,7 +206,8 @@ textarea {
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 35vh;
+  height: 40vh;
+  min-height: 13rem;
   padding: 2rem 0;
 }
 #carouselInfo article .article-content{

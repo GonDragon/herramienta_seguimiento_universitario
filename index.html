@@ -26,15 +26,15 @@
 
   <!-- Add your site or application content here -->
 
-  <header class="resaltado container-fluid d-flex">
-    <nav id="barra-principal" class="navbar navbar-expand-lg navbar-dark py-0">
+  <header class="resaltado container-fluid d-flex align-items-center justify-content-between">
+    <nav id="barra-principal" class="navbar navbar-expand-lg navbar-dark justify-content-start py-0">
+      <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#mainNavToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="navbar-brand d-flex align-items-center p-0">
         <img class="logo" src="tile-wide.png" alt="logo">
         <h1 class="m-0">HSU</h1>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div class="collapse navbar-collapse" id="mainNavToggler">
         <ul class="navbar-nav px-2">
@@ -67,7 +67,13 @@
         </ul>
       </div>
     </nav>
+
+    <div class="">
+      <span>Conectarse</span>
+    </div>
   </header>
+  <!-- Login Modal Space -->
+
   <main class="container primaria p-3">
     <section class="py-2">
       <div id="carouselInfo" class="carousel slide carousel-fade rounded" data-ride="carousel" data-interval="false">
