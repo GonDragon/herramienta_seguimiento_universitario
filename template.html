@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/fa-all.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -26,19 +27,19 @@
 
   <!-- Add your site or application content here -->
 
-  <header class="resaltado container-fluid d-flex">
-    <nav id="barra-principal" class="navbar navbar-expand-lg navbar-dark py-0">
+  <header class="resaltado container-fluid d-flex align-items-center justify-content-between">
+    <nav id="barra-principal" class="navbar navbar-expand-lg navbar-dark justify-content-start py-0">
+      <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#mainNavToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="navbar-brand d-flex align-items-center p-0">
         <img class="logo" src="tile-wide.png" alt="logo">
         <h1 class="m-0">HSU</h1>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div class="collapse navbar-collapse" id="mainNavToggler">
         <ul class="navbar-nav px-2">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="./index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown">
@@ -67,7 +68,60 @@
         </ul>
       </div>
     </nav>
+
+    <div class="">
+      <button type="button" class="btn btn-outline-resaltado" data-toggle="modal" data-target="#login-modal">
+  Conectarse
+</button>
+    </div>
   </header>
+  <!-- Login Modal Space -->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="m-auto modal-content borde-resaltado row flex-md-row">
+
+        <div class="col-lg-4 p-0">
+          <div class="modal-header rounded-0 border-0 resaltado d-flex flex-column align-items-center">
+            <div class="d-flex w-100 align-items-start justify-content-between">
+              <h3 class="modal-title">HSU</h5>
+            </div>
+            <p class="d-none d-md-inline text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique quis sapien convallis finibus. Donec vel augue vitae sem convallis tincidunt sit amet ac diam. Nam sit amet nisi in est facilisis commodo nec non eros.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-8 p-0">
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Usuario">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <small id="emailHelp" class="form-text"><a href="#">¿Olvidó su contraseña?</a></small>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="recuerdame">
+                <label class="form-check-label" for="recuerdame">Recuérdame</label>
+              </div>
+              <button type="submit" class="btn btn-block btn-primary">Acceder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main class="container primaria p-3">
 
   </main>
@@ -77,9 +131,9 @@
 
   <!-- End of site things -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/popper.min.js"></script>
   <script src="js/main.js"></script>
 
 
