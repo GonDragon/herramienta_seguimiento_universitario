@@ -283,7 +283,21 @@ textarea {
 }
 
 /* Tablas */
+.tabla-de-datos {
+  max-height: 80vh;
+  overflow-y: auto;
+}
 
+.tabla-de-datos thead th{
+  position: sticky;
+  top: 0;
+}
+
+.tabla-de-datos thead th,
+.tabla-de-datos thead tr {
+  background-color: inherit;
+  border: none;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
