@@ -132,18 +132,19 @@ textarea {
 }
 
 /* Colores propios */
-.primaria,body {
+.primario,body {
  background-color: #eee;
  color: #222;
 }
-
 .resaltado {
  background-color: #224;
  color: #eee;
 }
+
 .borde-resaltado {
   border-color: #224;
 }
+
 .btn-resaltado {
   background-color: #808000;
   color: #fff;
@@ -157,6 +158,10 @@ textarea {
 .btn-outline-resaltado:hover{
   background-color: #606000;
   color: #fff;
+}
+
+.btn-primario{
+
 }
 
 
