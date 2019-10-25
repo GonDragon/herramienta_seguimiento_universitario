@@ -132,18 +132,19 @@ textarea {
 }
 
 /* Colores propios */
-.primaria,body {
+.primario,body {
  background-color: #eee;
  color: #222;
 }
-
 .resaltado {
  background-color: #224;
  color: #eee;
 }
+
 .borde-resaltado {
   border-color: #224;
 }
+
 .btn-resaltado {
   background-color: #808000;
   color: #fff;
@@ -159,6 +160,20 @@ textarea {
   color: #fff;
 }
 
+.btn-primario {
+  background-color: #224;
+  color: #fff;
+}
+.btn-primario-resaltado {
+  background: none;
+  border: 1px solid #224;
+  color: #808000;
+}
+.btn-primario:hover,
+.btn-primario-resaltado:hover{
+  background-color: #808000;
+  color: #fff;
+}
 
 /* Cabecera */
 .navbar-brand .logo {
@@ -262,18 +277,27 @@ textarea {
   margin-top: 0.5rem;
 }
 
-.profilepic-wrapper a:hover {
-  background-color: #808000;
-  color: #eee;
-}
-
 .materias li{
   padding: 0 0.5rem;
   margin: 0.5rem 0;
 }
 
 /* Tablas */
+.tabla-de-datos {
+  max-height: 80vh;
+  overflow-y: auto;
+}
 
+.tabla-de-datos thead th{
+  position: sticky;
+  top: 0;
+}
+
+.tabla-de-datos thead th,
+.tabla-de-datos thead tr {
+  background-color: inherit;
+  border: none;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
